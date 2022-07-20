@@ -1,15 +1,15 @@
 @font-face {
   font-family: "font-1";
-  src: url(./assets/fonts/JosefinSans-ExtraLight.ttf);
+  src: url(./assets/fonts/Lato-Regular.ttf);
 }
 @font-face {
   font-family: "font-2";
-  src: url(./assets/fonts/JosefinSans-Regular.ttf);
+  src: url(./assets/fonts/Lato-Bold.ttf);
 }
 @font-face {
   font-family: "font-3";
 
-  src: url(./assets/fonts/JosefinSans-Bold.ttf);
+  src: url(./assets/fonts/Lato-Black.ttf);
 }
 
 // var used
@@ -18,7 +18,8 @@ $font-2: "font-2", serif;
 $font-3: "font-3", serif;
 $font-4: Open Sans, sans-serif;
 
-$color-orange: #f5781a;
+$blue-bg :rgb(48, 17, 81);
+$color-orange: #69a952;
 $color-green: #00c14a;
 $color-red: #cb0000;
 $color-secondanry-hover: hsl(0, 51%, 29%);
@@ -40,7 +41,7 @@ $color-mainColorText: black; // CAN CHANGE
 $color-grayInput: #dddddd;
 $shadow: rgb(219, 218, 218);
 
-$color-primary: #f5781a; // CAN CHANGE
+$color-primary: #69a952; // CAN CHANGE
 $color-primary-hover: rgb(207, 104, 7); // CAN CHANGE
 
 // mixin
@@ -73,7 +74,7 @@ $color-primary-hover: rgb(207, 104, 7); // CAN CHANGE
 
 @mixin backgGradient {
   background: $color-primary;
-  background: linear-gradient(90deg, rgb(100, 98, 79) 0%, #f5781a 50%, #dba882 92%);
+  background: linear-gradient(90deg, rgb(100, 98, 79) 0%, #69a952 50%, #dba882 92%);
 }
 
 @mixin item-hover {

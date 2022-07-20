@@ -30,12 +30,12 @@ function HomeShop() {
     <div>
       <div className='margin-2 '>
         <Grid container spacing={1}>
-          <Grid item xs={12} sm={12} md={4} xl={4}>
+          <Grid item xs={12} sm={4} md={3} xl={3}>
             <div className='margin-top-2  margin-bottom-2 '>
               <SubheaderCategories />
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={8} xl={8}>
+          <Grid item xs={12} sm={8} md={9} xl={9}>
             <ContentScrollable height={540} hideBgColor={false}>
               <div className='margin-top-2  margin-bottom-2 '>
                 <Categories category={allProducts.currentCategory} />
@@ -44,7 +44,7 @@ function HomeShop() {
                 <Grid container spacing={2}>
                   {!allProducts.isLoadingInfo &&
                     allProducts.products.map((item: any, key: number) => (
-                      <Grid item xs={12} sm={6} md={6} xl={4} key={key}>
+                      <Grid item xs={12} sm={6} md={4} xl={3} key={key}>
                         <div className='margin-bottom-2 '>
                           <CardShop item={item} index={key} />
                         </div>

@@ -1,6 +1,6 @@
 //  --------- new login -----------
 .mainLogin {
-  background: url("../../assets/img/backgLogin.jpg") no-repeat fixed center/cover;
+  // background: url("../../assets/img/backgLogin.jpg") no-repeat fixed center/cover;
   height: 85vh;
   position: relative;
   -webkit-animation: fadeIn 0.4s linear;
@@ -51,8 +51,9 @@
       margin: 5px;
 
       .content-body {
-        @include backgGradient;
+        // @include backgGradient;
         @include putBorder_shadow;
+        background-color: $blue-bg ;
         // background-color: ;
       }
     }

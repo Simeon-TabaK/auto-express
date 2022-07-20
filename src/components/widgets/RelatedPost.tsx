@@ -14,19 +14,19 @@ import {
 
 const data = [
   {
-    user: "MUHESI Bless ",
+    user: "Sim Tab ",
     fText:
       " MUI provides a robust, customizable, and accessible library of foundational and advanced components",
     lText: "Ruby and Rails"
   },
   {
-    user: "MUHESI Moise",
+    user: "Simeon Tab",
     fText:
       " MUI provides a robust, customizable, and accessible library of foundational and advanced components",
     lText: "git and github"
   },
   {
-    user: "Serge Kami",
+    user: "David Test",
     fText:
       " MUI provides a robust, customizable, and accessible library of foundational and advanced components",
     lText: "Javascript "
@@ -94,7 +94,7 @@ export function SubheaderCategories() {
 
   return (
     <List className={` containerCategories-right`}>
-      <h2> Categories</h2>
+      <h3> Categories</h3>
       <Divider component='li' />
       <ListItem onClick={() => dispatch(getAllProducts())}>
         <ListItemText primary={fText("Toutes")} secondary='' />

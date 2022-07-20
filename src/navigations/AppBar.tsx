@@ -10,6 +10,8 @@ import { askSession } from "../context/AppContext";
 import Storage, { keyStorage } from "../context/Storage";
 import ShopIcon from "@material-ui/icons/Shop";
 
+import logo from "../assets/img/logo.png"
+
 const SIZE_SCREEN = 670;
 export const AppBar = () => {
   const history = useHistory();
@@ -61,10 +63,7 @@ export const AppBar = () => {
   return (
     <div className='containerAppBar'>
       <div className='logo isCursor ' onClick={() => history.push("/")}>
-        <p>
-          <ShopIcon style={{ transform: "translateY(5px)" }} />{" "}
-          <strong> Super-Cars</strong>{" "}
-        </p>
+        <img src={logo} alt="" style={{height :'40px',}} />
       </div>
       {(large > SIZE_SCREEN || toggleMenu) && (
         <>
@@ -96,12 +95,10 @@ export const AppBar = () => {
                 Admin
               </li>
               <li
-                className='items isCursor'
+                className='panier items isCursor'
                 onClick={() => selectPath("/monPanier")}
               >
-                <ShoppingBadges
-                  length={createCommand?.command?.panier?.length || 0}
-                />
+                Panier
               </li>
 
               {logged ? (
