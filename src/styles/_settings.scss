@@ -18,7 +18,7 @@ $font-2: "font-2", serif;
 $font-3: "font-3", serif;
 $font-4: Open Sans, sans-serif;
 
-$blue-bg :rgb(48, 17, 81);
+$blue-bg :#301151;
 $color-orange: #69a952;
 $color-green: #00c14a;
 $color-red: #cb0000;
@@ -37,12 +37,12 @@ $color-blackComment: rgb(100, 115, 115);
 $color-blackComment-2: #f2f2f2;
 
 $color-back-1: #f09652;
-$color-mainColorText: black; // CAN CHANGE
-$color-grayInput: #dddddd;
+$color-mainColorText: rgb(37, 34, 34); // CAN CHANGE
+$color-grayInput: #ebe6e6;
 $shadow: rgb(219, 218, 218);
 
-$color-primary: #69a952; // CAN CHANGE
-$color-primary-hover: rgb(207, 104, 7); // CAN CHANGE
+$color-primary: #301151; // CAN CHANGE
+$color-primary-hover: rgba(68, 155, 221, 0.83); // CAN CHANGE
 
 // mixin
 
@@ -351,8 +351,9 @@ section {
 .mainBreadcrumb {
   margin-bottom: 40px;
   margin-left: 25px;
-  .link {
-  }
+
+  // .link {
+  // }
 }
 /*
 textarea {

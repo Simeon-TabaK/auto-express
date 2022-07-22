@@ -110,10 +110,10 @@ export default function RecipeReviewCard({ showDetail, item, index }: any) {
           onClick={() => history.push(`/shop/detail-product/${item.id}`)}
         >
           <h2> {showDetail ? item?.name : substringText(item?.name, 20)} </h2>
-          <h3>category: {item.category}</h3>
-          <h2 className='pice'>
+          <h4>category: {item.category}</h4>
+          <h3 className='pice'>
             <span className='btn-event '> $ {item.price} </span>
-          </h2>
+          </h3>
 
           <div className='description'>
             {showDetail

@@ -76,14 +76,6 @@ export default function RelatedPost() {
         </>
       ))}
 
-      {/* <ListItem>
-        <ListItemAvatar>
-          <Avatar>
-            <WorkIcon />
-          </Avatar>
-        </ListItemAvatar>
-        <ListItemText primary="Work" secondary="Jan 7, 2014" />
-      </ListItem> */}
     </List>
   );
 }
@@ -94,7 +86,7 @@ export function SubheaderCategories() {
 
   return (
     <List className={` containerCategories-right`}>
-      <h3> Categories</h3>
+      <h3 style={{color:'$blue-bg'}}> Categories</h3>
       <Divider component='li' />
       <ListItem onClick={() => dispatch(getAllProducts())}>
         <ListItemText primary={fText("Toutes")} secondary='' />

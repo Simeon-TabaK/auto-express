@@ -104,19 +104,9 @@ const TablePaniers = () => {
   return (
     <div className='maiTabProducts margin-2 '>
       <Grid container spacing={1}>
-        <Grid item xs={12} sm={12} md={4} xl={4}>
-          {logged ? (
-            <CardProfileClient client={user} isLoadingInfo={false} />
-          ) : (
-            <>
-              <h2> Vous n'etes pas connectés </h2>
-              <SignIn height={"85vh"} />
-            </>
-          )}
-        </Grid>
 
         <Grid item xs={12} sm={12} md={8} xl={8}>
-          <h2>Listes des articles passés en commande </h2>
+          <h2 style={{textAlign: 'center'}}>Listes des articles dans votre panier </h2>
           <div className='margin-2 '>
             <ContentTable>
               <ScrollbarHor minWidth={"800px"}>
@@ -155,6 +145,18 @@ const TablePaniers = () => {
               </div>
             </div>
           </div>
+        </Grid>
+
+        
+        <Grid item xs={12} sm={12} md={4} xl={4}>
+          {logged ? (
+            <CardProfileClient client={user} isLoadingInfo={false} />
+          ) : (
+            <>
+              <h4 style={{textAlign: 'center'}}> Vous n'etes pas connectés </h4>
+              <SignIn height={"85vh"} />
+            </>
+          )}
         </Grid>
       </Grid>
     </div>
